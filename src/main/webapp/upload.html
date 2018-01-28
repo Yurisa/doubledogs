@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://java.sun.com/jsf/html" dir="ltr">
+<head>
+    <meta name="viewport" content="width = device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+
+    <!-- production -->
+    <link rel="stylesheet" type="text/css" href="uikit/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="uikit/css/components/progress.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/upload.css">
+    <link rel="stylesheet" type="text/css" href="css/lookbook.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!--<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+    <script type="text/javascript" src="js/plup/plupload.full.min.js"></script>
+    <script type="text/javascript" src="uikit/js/uikit.min.js"></script>
+
+
+    <!-- debug
+    <script type="text/javascript" src="../js/moxie.js"></script>
+    <script type="text/javascript" src="../js/plupload.dev.js"></script>
+    -->
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <nav class="box navbar">
+            <div class="box theWishListArea">
+                <a href="mywishlist.html">
+                    <div class="wishListNum_div">0</div>
+                </a>
+
+                <div class="wishList_div">
+                    MY WISH LIST/<a class="login" href="#">&nbsp;sign in</a>
+                </div>
+            </div>
+            <div class="box menu-wrap">
+                <ul class="main-menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="lookbook.html">LOOKBOOK</a></li>
+                    <li>
+                        <a id="products" href="products.html">PRODUCTS</a>
+                    </li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+
+                    <li><a id="search" href="#">SEARCH</a></li>
+                </ul>
+
+                <div class="box searchArea">
+                    <input type="text" name="search">
+                    <input type="button" name="search-btn" value="search">
+                </div>
+            </div>
+            <div class="header-logo">
+                <img src="images/logo.png">
+            </div>
+        </nav>
+    </div>
+    <div id="preimage" class="box preimage" >
+
+    </div>
+
+<!--上传图片-->
+<div id="uploadposition" class="box center uk-form-file">
+    <div id="filelist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
+    <button class="uk-button" style="width: 150px;height: 15px;margin: 0 auto;margin-bottom: 30px;float:left" id="pickfiles" href="javascript:;">Select files</button>
+    <button class="uk-button" style="width: 150px;height: 15px;margin: 0 auto;margin-bottom: 30px;float:left" id="uploadfiles" href="javascript:;">Upload files</button>
+    <div class="uk-progress uk-progress-striped uk-progress-success uk-active uploadarea">
+        <div class="uk-progress-bar" style="width: 0%;" id="progressbar"></div>
+    </div>
+
+</div>
+
+    <div class="box footer">
+        <nav>
+            <div class="footer-txt footer-title">CONTACT WITH US</div>
+            <div class="box footer-icon">
+                <a href="www.weibo.com">
+                    <div class="icon box icon-weibo">
+                        <img src="images/weibo.png">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon icon-wechat">
+                        <ul>
+                            <li>
+                                <img id="wechat" src="images/wechat.png">
+                            </li>
+                            <li>
+                                <img id="wechat2" src="images/wechat2.png">
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-txt footer-service">
+                <a href="customerService.html">CUSTOMER SERVICE</a>
+            </div>
+            <div class="footer-txt footer-subscribe">
+                <a class="login" href="#">SIGN IN / JOIN</a>
+            </div>
+            <div class="footer-txt footer-msg">Copyright © 2017 Pinch Design Ltd. All rights reserved. DoubleDogs is a registered trademark.</div>
+        </nav>
+    </div>
+
+    <div class="theJoinArea">
+        <h1>Create Account</h1>
+        <p>Save Your wish list items permanent and manage in any device.</p>
+        <div class="input email-input">
+            <label class="title">Email:</label>
+            <input type="text" name="" id="regemail">
+            <div id="prompt">This email has been registered</div>
+        </div>
+        <div class="input password-input">
+            <label class="title">Password:</label>
+            <input type="Password" name="" id="regpassword">
+        </div>
+        <div class="input confirm-input">
+            <label class="title">Confirm Password:</label>
+            <input type="Password" name="">
+        </div>
+        <div class="box checkbox">
+				<span>
+					<input type="checkbox" name="">I would like to receive exclusive offers and news.
+				</span>
+            <span>
+					<input type="checkbox" name=""><a href="#">Yes.I consent to the Privacy Policy</a>
+				</span>
+        </div>
+        <div class="box btnArea">
+            <input type="button" name="" value="JOIN US" id="register">
+            <input id="backToSign" type="button" name="" value="BACK TO SIGN IN">
+        </div>
+    </div>	<!-- 注册 -->
+    <div class="theSignArea">
+        <h1>SIGN IN</h1>
+        <div class="input email-input">
+            <label class="title">Email:</label>
+            <input id="useremail" type="text" name="" >
+        </div>
+        <div class="input password-input">
+            <label class="title">Password:</label>
+            <input id="userpassword" type="Password" name="">
+        </div>
+        <div class="box btnArea">
+            <input id="login" type="button" name="" value="SIGN IN">
+            <a href="#">Forgotten password?</a>
+            <div class="theSign-join-area">
+                <input id="Sign-join-btn" type="button" name="" value="JOIN US">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+    // Custom example logic
+
+    var uploader = new plupload.Uploader({
+        runtimes : 'html5,flash,silverlight,html4',
+        browse_button : 'pickfiles', // you can pass an id...
+        container: document.getElementById('uploadposition'), // ... or DOM Element itself
+        url : '/doubledogs/ajaxupload',
+        flash_swf_url : 'js/plup/Moxie.swf',
+        silverlight_xap_url : 'js/plup/Moxie.xap',
+        chunk_size:"200kb",
+
+
+        filters : {
+            max_file_size : '10mb',
+            mime_types: [
+                {title : "Image files", extensions : "jpg,gif,png"},
+                {title : "Zip files", extensions : "zip"}
+            ]
+        },
+
+        init: {
+            PostInit: function() {
+                document.getElementById('filelist').innerHTML = '';
+
+                document.getElementById('uploadfiles').onclick = function() {
+                    uploader.start();
+                    return false;
+                };
+            },
+
+            FilesAdded: function(up, files) {
+                plupload.each(files, function(file) {
+                    var progressbar = document.getElementById("progressbar");
+                    $("#preimage").append($("<div class='uk-thumbnail imglist' id="+file.id+"><img src='' alt='' style='width: 100%;height: 80%'> <div class='uk-thumbnail-caption imagename'>"+file.name+"（"+plupload.formatSize(file.size)+"）"+"<b></b>"+"</div></div>"));
+                    progressbar.style.width = 0;
+                    progressbar.innerHTML = 0;
+                });
+            },
+
+            UploadProgress: function(up, file) {
+                var progressbar = document.getElementById("progressbar");
+                document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+                progressbar.style.width=file.percent+"%";
+                progressbar.innerHTML=file.percent+"%";
+            },
+            FileUploaded: function(up, file, info) {
+                // Called when file has finished uploading
+//                log('[FileUploaded] File:', file, "Info:", info);
+                var data = strToJson(info.response);
+                $("#"+file.id+" img").attr("src",data.path);
+               console.log(typeof (info.response));
+//                $("#test").attr("src",info.path);
+            },
+            Error: function(up, err) {
+                document.getElementById('console').appendChild(document.createTextNode("\nError #" + err.code + ": " + err.message));
+            }
+        }
+    });
+
+    uploader.init();
+    function strToJson(str){
+        return JSON.parse(str);
+    }
+
+    </script>
+<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>

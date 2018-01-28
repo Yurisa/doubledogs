@@ -1,0 +1,301 @@
+body {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	font-family:Arial,Verdana,Sans-serif;
+	font-size: 14px;
+	line-height: 1em;
+}
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+img {
+	max-width: 100%;
+}
+nav a,button {
+	min-height: 48px;
+	min-width: 48px;
+	padding: 1.5em;
+	
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul li {
+	list-style-type: none;
+}
+.box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+.header {
+	width: 100%;
+}
+.navbar {
+	width: 100%;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+}
+.theWishListArea {
+	flex: 1;
+	align-items: flex-end;
+}
+.theWishListArea a {
+	padding: 0;
+	transform: translate(0,15px);
+}
+.wishListNum_div {
+	width: 30px;
+	height: 30px;
+	border: 3px solid #cc7a00;
+	color: #cc7a00;
+	border-radius: 25px;
+	background-color: transparent;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 10px;
+}
+.wishList_div {
+	height: 30px;
+	color: #cc7a00;
+	text-align: center;
+	line-height: 30px;
+	padding-left: 10px;
+	display: none;
+}
+.wishList_div a {
+	color: #cc7a00;
+	text-align: center;
+	text-decoration: underline;
+}
+.main-menu li {
+	text-align: center;
+	float: left;
+	padding-bottom: 10px;		
+}
+.main-menu li:hover {
+	opacity: 0.5;
+}
+.menu-wrap {
+	flex: 4;
+	justify-content: flex-end;
+	transform: translate(30px,30px);
+}
+.header-logo {
+	min-width: 250px;
+}
+.header-logo img{
+	width: 100%;
+	height: 90px;
+	margin-top: 20px;
+	/*margin-left: calc(20%);*/
+}
+
+.footer {
+	width: 100%;
+	height: auto;
+	background-color: #1b1b1f;
+	color: #fff;
+	flex-flow: column;
+}
+.footer-txt {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 5px;
+
+}
+.footer-txt a {
+	color: #fff;
+}
+.footer-title {
+	width: 100%;
+	font-size: 16px;
+	padding-top: 30px;
+}
+.footer-icon {
+	width: 100%;
+	flex-flow: row;
+	justify-content: center;
+}
+.icon {
+	border: 1.5px solid #fff;
+	width: 74px;
+	height: 74px;
+	flex-flow: row;
+	flex-wrap: wrap;
+	background-color: transparent;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.icon-wechat ul {
+	width: 2000px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	transition: left 1s;
+}
+.icon-wechat ul li {
+	float: left;
+	padding-right: 2px;
+}
+.icon img {
+	width: 72px;
+	height: 72px;
+	background-color: #fff;
+	opacity: 0.5;
+}
+#wechat2 {
+	opacity: 1;
+}
+.footer-service {
+	padding-top: 0;
+}
+.footer-msg {
+	font-size: 12px;
+}
+.products-content {
+	height: 30px;
+	background-color: #fff;
+	opacity: 0.5;
+	position: absolute;
+	z-index: 3;
+	display: none;
+	transform: translate(-150px,51px);
+	float: left;
+	padding: 0;
+}
+.products-content ul li{
+	border: none;
+	color: black;
+	text-align: center;
+	float: left;
+	padding-bottom: 10px;	
+}
+.searchArea {
+	height: auto;
+	width: 150px;
+	background-color: #fff;
+	opacity: 0.5;
+	position: absolute;
+	z-index: 3;
+	display: none;
+	transform: translate(20px,42px);
+	float: left;
+	padding: 0;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.searchArea input:nth-child(1) {
+	width: 90%;
+}
+.searchArea input:nth-child(2) {
+	width: 50px;
+	border: none;
+	background-color: #cc7a00;
+	margin-top: 5px;
+	color: #fff;
+}
+.theJoinArea {
+	width: 30%;
+	height: auto;
+	border: 8px solid black;
+	position: absolute;
+	z-index: 4;
+	top: calc(10%);
+	left: calc(32%);
+	margin: 0 auto;
+	background-color: #fff;
+	flex-flow: column;
+	padding: 0 20px;
+	display: none;
+	/**/
+}
+.theJoinArea h1,p {
+	width: 100%;
+}
+.title{
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+.input {
+	margin-bottom: 10px;
+}
+.input input {
+	width: 99%;
+	height: 17px;
+	padding: 10px 0;
+}
+.checkbox input{
+	margin-bottom: 10px;
+} 
+.btnArea {
+	width: 100%;
+	flex-flow: column;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+.btnArea a {
+	text-decoration: underline;
+	margin-bottom: 40px;
+}
+.btnArea input {
+	width: 100%;
+	height: 40px;
+	border: none;
+	font-weight: bold;
+	margin: 10px auto;
+}
+.checkbox span a {
+	text-decoration: underline;
+}
+.btnArea input:nth-child(1) {
+	background-color: black;
+	color: #fff;
+}
+.btnArea input:nth-child(2) {
+	border: 3px solid black;
+	background-color: #fff;
+}
+.theSignArea {
+	width: 30%;
+	height: 400px;
+	border: 8px solid black;
+	position: absolute;
+	z-index: 3;
+	/*left: 50%;*/
+	top: calc(10%);
+	left: calc(32%);
+	/*transform: translate(0,-50%);*/
+	margin: 0 auto;
+	background-color: #fff;
+	flex-flow: column;
+	padding: 0 20px;
+	display: none;
+}
+.theSignArea h1,p {
+	width: 100%;
+}
+.theSign-join-area {
+	padding-top: 10px;
+	border-top: 1px solid #c8c8c8;
+}
+#Sign-join-btn {
+	border: 3px solid black;
+	background-color: #fff;
+	color: black;
+}
+#prompt{
+	width:100%;
+	font-size: 10px;
+	color: #d32c46;
+	display: none;
+}

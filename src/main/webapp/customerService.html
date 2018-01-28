@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DoubleDogs-CUSTOMER SERVICE</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/customerservice.css">
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBjU82XNyT8JFEouO7YD4MH3z7zsTkZguI&sensor=false"></script>
+	<script>
+		var myCenter=new google.maps.LatLng(30.2248541900,120.0226470200);
+
+		function initialize()
+		{
+		var mapProp = {
+		  center:myCenter,
+		  zoom:15,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		var marker=new google.maps.Marker({
+		  position:myCenter,
+		  });
+
+		marker.setMap(map);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<nav class="box navbar">
+				<div class="box theWishListArea">
+					<a href="mywishlist.html">
+						<div class="wishListNum_div">0</div>
+					</a>
+					
+					<div class="wishList_div">
+						MY WISH LIST/<a class="login" href="#">&nbsp;sign in</a>
+					</div>
+				</div>
+				<div class="box menu-wrap">
+					<ul class="main-menu">
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="lookbook.html">LOOKBOOK</a></li>
+						<li>
+							<a id="products" href="products.html">PRODUCTS</a>
+							
+						</li>
+						<li><a href="aboutus.html">ABOUT US</a></li>
+						<li><a id="search" href="#">SEARCH</a></li>
+					</ul>
+
+					<div class="box searchArea">
+						<input type="text" name="search">
+						<input type="button" name="search-btn" value="search">
+					</div>
+				</div>
+				<div class="header-logo">
+					<img src="images/logo.png">
+				</div>
+			</nav>
+		</div>
+		<div class="box center">
+			<div class="contentTitle">
+				<h2>CUSTOMER SERVICE</h2>
+			</div>
+			<div class="box QA-area">
+				<div class="QA">
+					<div class="Q-area-default">
+						<h1>Q:How to ..?</h1>
+					</div>
+					<div class="A-area">
+						<span><h1>A:</h1></span>
+						<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+					</div>
+				</div>
+
+				<div class="QA">
+					<div class="Q-area-default">
+						<h1>Q:How to ..?</h1>
+					</div>
+					<div class="A-area">
+						<span><h1>A:</h1></span>
+						<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+					</div>
+				</div>
+				<div class="QA">
+					<div class="Q-area-default">
+						<h1>Q:How to ..?</h1>
+					</div>
+					<div class="A-area">
+						<span><h1>A:</h1></span>
+						<div id="googleMap" style="width:500px;height:380px;">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+				
+			
+			
+		</div>
+	
+		
+		<div class="box footer">
+			<nav>
+				<div class="footer-txt footer-title">CONTACT WITH US</div>
+				<div class="box footer-icon">
+					<a href="www.weibo.com">
+						<div class="icon box icon-weibo">
+							<img src="images/weibo.png">
+						</div>
+					</a>	
+					<a href="#">
+						<div class="icon icon-wechat">	
+							<ul>
+								<li>
+									<img id="wechat" src="images/wechat.png">
+								</li>
+								<li>
+									<img id="wechat2" src="images/wechat2.png">
+								</li>
+							</ul>								
+						</div>
+					</a>			
+				</div>
+				<div class="footer-txt footer-service">
+					<a class="footer-log" href="customerService.html">CUSTOMER SERVICE</a>
+				</div>
+				<div class="footer-txt footer-subscribe">
+					<a class="login" href="#">SIGN IN / JOIN</a>
+				</div>
+				<div class="footer-txt footer-msg">Copyright © 2017 Pinch Design Ltd. All rights reserved. DoubleDogs is a registered trademark.</div>
+			</nav>		
+		</div>
+		<div class="theJoinArea">
+			<h1>Create Account</h1>
+			<p>Save Your wish list items permanent and manage in any device.</p>
+			<div class="input email-input">
+				<label class="title">Email:</label>
+				<input type="text" name="" id="regemail">
+				<div id="prompt">This email has been registered</div>
+			</div>
+			<div class="input password-input">
+				<label class="title">Password:</label>
+				<input type="Password" name="" id="regpassword">
+			</div>
+			<div class="input confirm-input">
+				<label class="title">Confirm Password:</label>
+				<input type="Password" name="">
+			</div>
+			<div class="box checkbox">
+				<span>
+					<input type="checkbox" name="">I would like to receive exclusive offers and news.
+				</span>
+				<span>
+					<input type="checkbox" name=""><a href="#">Yes.I consent to the Privacy Policy</a>
+				</span>
+			</div>
+			<div class="box btnArea">
+				<input type="button" name="" value="JOIN US" id="register">
+				<input id="backToSign" type="button" name="" value="BACK TO SIGN IN">
+			</div>
+		</div>	<!-- 注册 -->
+		<div class="theSignArea">
+			<h1>SIGN IN</h1>
+			<div class="input email-input">
+				<label class="title">Email:</label>
+				<input id="useremail" type="text" name="" >
+			</div>
+			<div class="input password-input">
+				<label class="title">Password:</label>
+				<input id="userpassword" type="Password" name="">
+			</div>
+			<div class="box btnArea">
+				<input id="login" type="button" name="" value="SIGN IN">
+				<a href="#">Forgotten password?</a>
+				<div class="theSign-join-area">
+					<input id="Sign-join-btn" type="button" name="" value="JOIN US">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/customerservice.js"></script>
+
+</body> 
+</html>

@@ -1,0 +1,936 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+i,em{
+    font-style: normal;
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    background-color: transparent;
+    empty-cells: show;
+    display: table;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+a {
+    outline: none;
+    text-decoration: none!important;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+}
+h2{
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+p{
+    color: #000000;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+span{
+    color: #a3a3a3;
+    font-size: 18px;
+    text-transform: uppercase
+}
+.banner{
+    width: 100%;
+    height: 64px;
+    margin-top: 0px;
+    background-color: white;
+    position: fixed;     /* 悬浮条  */
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.cover {
+    width: 100%;
+    height: 1200px;
+    background: black;
+    position: fixed;
+    top: 64px;
+    left: 0px;
+    z-index: 0;
+    filter:alpha(Opacity=90);
+    -moz-opacity:0.5;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.banner img:nth-child(1){
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* /放大镜 */
+.glass{
+    float:right;
+    height:50px;
+    margin-top: 6px;
+}
+
+#search{
+    height: 25px;
+    width: 100px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    transition: width 0.5s;
+}
+#menuIcon{
+    height: 30px;
+    float: right;
+    margin-top: 5px;
+}
+#search:focus{
+    width:200px;
+}
+
+
+#guide{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    float: left;
+    margin-left: 300px;
+}
+#guide li{
+    float: left;
+    line-height: 64px;
+    width: 100px;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+#guideList ul{
+    margin-top: 0px;
+    padding-left: 0px;
+    list-style: none;
+    background-color: white;
+    position:absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 100;
+    border-radius: 3px;
+
+}
+#guideList ul li{
+    border-bottom: 1px solid;
+    border-color: #BDBDBD;
+    border-radius: 3px;
+
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 100;
+
+}
+#knowYONEXImg{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    display: none;
+    background-color: white;
+    z-index: 100;
+
+}
+#knowYONEXImg img{
+    height: 204px;
+}
+#menuWindow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    transition: left 1s;
+    z-index: 999;
+}
+
+#menuWindow{
+    text-align: center;
+}
+
+#close{
+    height: 30px;
+    float: left;
+}
+/* #menuWindow h2:nth-child(1){
+    display: inline;
+}  */
+
+#menuWindow .glass{
+    float: left;
+    margin-top: 0px;
+}
+#menuWindow input{
+    height: 40px;
+    width: 100%;
+    float: left;
+}
+
+.menuList{
+    display: none;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    border-color: #BDBDBD;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.menuList ul{
+    font-size: 18px;
+    border-bottom: 1px solid;
+    border-color: #BDBDBD;
+    text-align: left;
+    padding-left: 30px;
+    list-style: none;
+
+}
+.menuList ul li{
+    border-bottom: 1px solid;
+    border-color: #BDBDBD;
+    text-align: left;
+}
+#main{
+    width: 100%;
+    _height: 6000px;
+    position: absolute;
+    top: 64px;
+}
+#container{
+    _height: 1200px;
+    min-height: 890px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin:0px auto;
+    padding: 0px;
+    z-index: 0;
+    min-width: 1903px;
+}
+#picList{
+    position: absolute;
+    z-index: 1;
+    width: 7612px;
+    height: 800px;
+    transition: left 1s;
+}
+#picList img{
+    float: left;
+    width: 1903px;
+}
+#buttons {
+    position: absolute;
+    left: 901.5px;
+    bottom: 20px;
+    z-index: 2;
+    height: 10px;
+    width: 100px;
+}
+
+#buttons span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #0057b8;
+    cursor: pointer;
+}
+
+#buttons .on {
+    background: #009541;
+}
+
+.arrow1 {
+    position: absolute;
+    top: 415px;
+    z-index: 3;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    text-decoration:none;
+    color: #fff;
+    background-color: RGBA(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.arrow1:hover {
+    background-color: RGBA(0, 0, 0, .7);
+}
+
+#container:hover .arrow1 {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+.home_news{
+    margin: 20px auto;
+    min-width: 1300px;
+    width: 85%;
+    height: 360px;
+}
+#newsContainer {
+    _height:1200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+.news{
+    _height: 360px;
+    width: 45%;
+    padding: 36px;
+    margin: 0px auto;
+    float: right;
+    overflow: hidden;
+}
+
+.news_banner {
+    padding-bottom: 10px;
+    height: 30px;
+}
+.news_nav {
+    background-color: #ededed;
+    margin-top: -3px;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    zoom:1;
+}
+.news_nav a{
+    line-height: 48px;
+    border-top: 2px solid #ededed;
+    color: #828282;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+}
+.news_nav a.active {
+    color: #0057b8;
+
+}
+.news_nav em{
+    line-height: 50px;
+    margin: 0px 20px;
+    display: inline-block;
+    font-style: normal;
+    color: #828282;
+}
+.list_hd {
+    font-size: 14px;
+    zoom: 1;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.list_hd a {
+    float: left;
+    color: #969696;
+}
+.list_hd a.active{
+    color: #0057b8;
+}
+.list_hd em {
+    float: left;
+    margin: 0px 20px;
+    color: #969696;
+}
+.selected {
+    float: right;
+    color: #969696;
+    width: 100px;
+    font-size: 14px!important;
+    font-weight: normal;
+    padding-right: 20px;
+    line-height: 20px;
+    border: solid 1px #dfdfdf;
+    appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 10px;
+    background: url("http://www.yonex.cn/tpl/yonex/Public/images/arrow-kong.png") no-repeat scroll right center transparent;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.button1 {
+    margin: 0px 0px 20px 1px;
+    width: 100px;
+    height: 27px;
+    line-height: 27px;
+    padding: 9px 30px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid #0057b8;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    display: block;
+    background: none repeat scroll 0 0 #0057b8;
+    transition: all ease 0.3s;
+}
+.button1 em {
+    display: inline-block;float: left;margin-left:-10px;
+}
+.button1:hover {
+    background: none repeat scroll 0 0 #009541;
+    border: 1px solid #009541;
+    color: white;
+}
+.button1 i{
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all ease 0.3s;
+}
+.button1 i:hover{
+    transform: scale(1.05);
+}
+.news_title {
+    color: #000000;
+    display: block;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    padding: 20px 0px;
+    font-size: 20px;
+    width: 80%;
+    font-weight: bold;
+    line-height: 38px;
+    margin-bottom: 20px;
+    height: 40px;
+    overflow: hidden;
+}
+.news_title2 {
+    font-size: 22px;
+    color: #333;
+    display: block;
+    height: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.news p{
+    margin-bottom: 20px;
+    height: 58px;
+    overflow: hidden;
+    color: #7a7a7a;
+    font-size: 14px;
+}
+.news p:nth-child(2) {
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfdfdf;
+    color: #333333;
+    height: 36px;
+}
+.news p:nth-child(2) em {
+    margin-right: 20px;
+}
+
+.newsPic{
+    height: 360px;
+    width: 45%;
+    margin: 0px auto;
+    overflow: hidden;
+    float: right;
+}
+.newsPic img {
+    margin: 0px auto;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.8s;
+}
+.newsPic img:hover {
+    transform: scale(1.2);
+}
+.arrow_small {
+    width: 71px;
+    height: 23px;
+    background: url("http://www.yonex.cn/tpl/yonex/Public/images/icons.png") no-repeat;
+    display: inline-block;
+    margin-top: 4px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+}
+#text_champion{
+    width: 80%;
+    padding:40px 0px 0px 0px;
+    margin:0px auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#article{
+    margin: 30px auto;
+    width: 100%;
+    padding: 0px;
+    _height: 500px;
+}
+#lindan_1{
+    height: 500px;
+    width: 80%;
+    margin-left: 40px;
+    position: relative;
+    min-width: 1300px;
+}
+#lindan_1 div {
+    height: 162px;
+    width: 50%;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    z-index: 2;
+}
+#lindan_1 div h2{
+    color: #ffffff;
+    width: 70%;
+    text-transform: uppercase;
+    line-height: 37px;
+    text-align: left;
+    font-size: 26px;
+}
+.translucence {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-top: 20px;
+    zoom: 1;
+}
+.translucence em{
+    color: #a3a3a3;
+    text-align: left;
+    float: left;
+}
+#home_news2 {
+    margin: 40px auto;
+    width: 100%;
+    _height: 400px;
+    min-height: 300px;
+}
+#stringWorker {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+#stringWorker img{
+    margin: 0px auto;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.8s;
+}
+#stringWorker img:hover
+{
+    transform: scale(1.2);
+}
+.pic_video{
+    position: relative;
+    color: #ffffff;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.video-btm{
+    width: 100%;
+    display: block;
+    margin-top:0px;
+}
+.product-info {
+    width: 80%;
+    margin-top: 50px;
+}
+.page-index	{
+    margin-bottom: 20px;
+}
+.page-index h3 {
+    font-size: 18px;
+    float: left;
+    font-weight: normal;
+}
+.page-index h3 a {
+    font-size: 18px;
+}
+.gt {
+    width: 6px;
+    height: 11px;
+    display: block;
+    margin: 5px 10px 0px;
+    background: url("http://www.yonex.cn/tpl/yonex/Public/images/icons.png") no-repeat;
+    background-position: -494px 0px;
+    float: left;
+}
+#goods {
+    margin: 0 auto;
+    width: 70%;
+    height: 600px;
+    margin-top: 40px;
+    min-width: 990px;
+}
+#goods #left{
+    width: 40%;
+    _height: 750px;
+    float: left;
+}
+#goods #right{
+    width: 50%;
+    _height:750px;
+    float: right;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 40px;
+}
+.product-text {
+    padding: 5px 0px;
+    border-bottom: 1px solid #ececf0;
+    zoom:1;
+}
+.product-text h1{
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+.product-text p {
+    color: #676767;
+    font-size: 14px;
+    margin-top: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+.product-text span {
+    color: #676767;
+    font-size: 14px;
+    font-weight: normal;
+}
+.info-table {
+    font-size: 14px;
+    color: #333333;
+}
+.info-table tbody tr {
+    padding: 10px 0px;
+    line-height: 25px;
+}
+.info-table tbody tr td:nth-child(1) {
+    padding-right: 10px;
+    display: table-cell;
+    word-break: keep-all!important;
+}
+.info-table  tbody tr td {
+    display: table;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+
+}
+.goods_pic_big {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    overflow: hidden;
+}
+.goods_pic_big img {
+    height: 100%;
+    width: 100%;
+}
+.spec_items {
+    position: relative;
+    height: 100px;
+    margin:0;
+}
+.spec_items ul{
+    width: 100%;
+    /*position: absolute;
+    top: 0px;
+    left: 0;*/
+    padding: 0;
+    height: 100px;
+
+    list-style-type: none;
+}
+.spec_items ul li {
+    float: left;
+    overflow: hidden;
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 84px;
+    height: 84px;
+    margin: 8px 8px;;
+    transition: all 0.3s;
+}
+.spec_items ul li:hover {
+    border: 1px solid #0057B8;
+
+}
+.spec_items ul li.on {
+    border: 1px solid #0057B8;
+}
+.spec_items ul li:nth-child(1) {
+    padding-left: 0px;margin-left: 0px;
+}
+.spec_items ul li img {
+    width: 100%;
+    height: 100%;
+}
+.describe {
+    position: relative;
+    width: 1000px;
+    height: 390px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.describe-btn {
+
+}
+.describe-btn em {
+    display: block;
+}
+.describe-btn span {
+    display: block;
+}
+.describe-left div {
+    position: relative;
+    width: 100%;
+    height: 304px;
+    overflow: hidden;
+    margin: 1px 0px;
+}
+#barList{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+#barUl{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 0px;
+    width: 1200px;
+}
+#barUl li{
+    list-style: none;
+    float: left;
+    margin:0 60px;
+}
+
+#barUl li img{
+    width: 70px;
+}
+#barUl li p{
+    height: 30px;
+    margin: 0 auto;
+}
+.describe-left {
+    padding-left: 0px;
+    width: 180px;
+    float: left;
+    margin-right: 10px;
+    height: 386px;
+    overflow: hidden;
+    position: relative;
+}
+.describe-left p {
+    cursor: pointer;
+}
+.describe-left a {
+    display: block;
+    text-align: left;
+    line-height: 20px;
+    transition: all ease 0.2s;
+    padding: 5px;;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+}
+.describe-left a:hover{
+    color: #fff;
+    background-color: #0057b8;
+}
+.describe-left ul li {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+    background-color: #e9e9e9;
+}
+.left-btn {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding-left: 0px;
+    transition: all ease 0.1s;
+    -webkit-transition: all ease 0.1s;
+    -moz-transition: all ease 0.1s;
+    -o-transition: all ease 0.1s;
+}
+.describe-right {
+    padding: 3px;;
+    max-height: 100%;
+    border: 1px solid #E3E3E3;
+    min-height: 100%;
+    width: 800px;
+    height: 386px!important;
+    overflow-y: scroll;
+    float: right;
+}
+.describe-inner {
+    display: none;
+}
+.describe-inner.active {
+    display: block;
+}
+.describe-inner div{
+    margin: 0px;
+}
+.product-hd {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cbcbcb;
+    font-size: 20px;
+    margin-bottom: 10px
+}
+.product-hd p {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.describe-right p {
+    line-height: 25px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.describe-right img {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+#bottom{
+    width: 80%;
+    margin: 40px auto;
+    height: 400px;
+}
+#bottom ul{
+    display: block;
+    padding: 0;
+    margin: 0;
+    _height:600px;
+    width: 100%;
+    list-style: none;
+}
+#bottom ul li{
+    width: 16.6%;
+    height: 220px;
+    float: left;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+}
+#bottom ul li ol {
+    width: 100%;
+    list-style: none;
+    display: block;
+}
+#bottom ul li ol li:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+#bottom ul li ol li a{display:block;color:#000000;
+    width:100%;
+    height:100%;
+    text-align:left;
+    text-decoration:none;
+    transition: all 0.4s;}
+#bottom ul li ol li a:hover{
+    transform: scale(1.1);
+    color: #0057b8;
+}
+#bottom ul li ol li{
+    font-size: 14px;
+    line-height: 25px;
+    height: 25px;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    display: list-item;
+}
+@media screen and (max-width: 1200px){
+    #guide{
+        display: none;
+    }
+    .glass{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+    .banner{
+        height:30px;
+        transition:all 0.5s;
+    }
+    #main{
+        top:30px;
+    }
+
+}
+@media screen and (max-width:1600px) {
+    .spec_items ul li {
+        margin: 8px 0px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #menuIcon{
+        display:none;
+    }
+}
+
+.color{
+    border:2px solid;
+    border-radius:25px;
+    background-color: #00AA91;
+}

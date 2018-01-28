@@ -1,0 +1,53 @@
+.main-menu li:nth-child(2) {
+	border-bottom: 8px solid black;
+}
+.center {
+	flex-flow: column;
+	flex-wrap: wrap;
+	margin: 60px 0;
+}
+.lookbook-single {
+	flex-flow: row;
+	flex-wrap: nowrap;
+	width: 90%;
+	/*margin: 0 50px;*/
+	margin: 0 auto;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+.ideaArea {
+	width: 29%;
+	height: auto;
+	margin-right: calc(13% / 2);
+   	filter: grayscale(100%);
+  	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+	-webkit-filter: grayscale(1);
+	transition: -webkit-filter .5s;
+}
+.ideaArea:hover {
+	filter: grayscale(0%);
+  	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0);
+	-webkit-filter: grayscale(0);
+	transition: -webkit-filter .5s;
+}
+.ideaArea:last-of-type {
+	margin-right: 0;
+}
+.ideaImg img {
+	width: 100%;
+	height: auto;
+}
+.ideaTitle {
+	width: 100%;
+	text-align: left;
+	/*margin: 10px 0;*/
+	font-size: 16px;
+}

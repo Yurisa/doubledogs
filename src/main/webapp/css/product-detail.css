@@ -1,0 +1,167 @@
+#name {
+	font-weight: bold;
+}
+.product-detail {
+	width: 80%;
+	height: 500px;
+	margin: 60px auto;
+	flex-flow: row;
+}
+.left {
+	flex: 1;
+	flex-flow: column;
+}
+.detailImg {
+	justify-content: flex-start;
+	align-items: center;
+}
+.detailImg img {
+	width: auto;
+	height: 320px;
+}
+.smallImg ul li {
+	float: left;
+	height: 150px;
+	margin: 10px;
+	border: 2px solid rgba(247, 247, 247, 0.66);
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+}
+.smallImg ul li:nth-child(1) {
+	border: 2px solid grey;
+}
+.smallImg ul li img {
+	width: 80px;
+	height: auto;
+}
+.right {
+	flex: 1;
+	flex-flow: column;
+}
+.right-row {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.right-row a {
+	text-decoration: underline;
+	margin-left: 10px;
+}
+.right-row span {
+	margin-left: 10px;
+}
+.color {
+	flex-flow: row;
+}
+.color-div {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-right: 15px;
+	border: 2px solid grey;
+	
+}
+.blue {
+	margin-left: 20px;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#050594),to(rgb(99, 99, 99)));
+}
+.red {
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#5d0000),to(rgb(99, 99, 99)));
+}
+.grey {
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#424141),to(rgb(99, 99, 99)));
+}
+.green {
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#043c04),to(rgb(99, 99, 99)));
+}
+.wishArea {
+	max-width: 200px;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border: 3px solid black;
+}
+.wishBtn {
+	width: 8px;
+	height: 8px;
+	position: relative;
+	background-color: rgb(156, 57, 57);
+	transform: rotate(45deg); 
+	/*left: 200px;
+	top: 250px;*/
+}
+.wishBtn:before {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgb(156, 57, 57);
+	left: -4px;
+	content: '';
+	
+}
+.wishBtn:after {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgb(156, 57, 57);
+	top: -4px;
+	content: '';
+}
+
+.wishBtn-yellow {
+	width: 8px;
+	height: 8px;
+	position: relative;
+	background-color: rgb(22, 98, 18);
+	transform: rotate(45deg);
+	/*top: 250px;*/
+}
+.wishBtn-yellow:before {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgb(22, 98, 18);
+	left: -4px;
+	content: '';
+
+}
+.wishBtn-yellow:after {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgb(22, 98, 18);
+	top: -4px;
+	content: '';
+
+}
+.rangeArea {
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid black;
+	width: 90%;
+	flex-flow: column;
+
+}
+.rangeTitle {
+	width: 100%;
+}
+.range ul li {
+	float: left;
+	height: 300px;
+	margin-right: 30px;
+	border: 2px solid rgba(247, 247, 247, 0.66);
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+}
+.range ul li img {
+	width: 200px;
+	height: auto;
+
+}

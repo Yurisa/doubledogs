@@ -1,0 +1,22 @@
+.main-menu li:nth-child(1) {
+	border-bottom: 8px solid #fff;
+}
+.center {
+	flex-flow: column;
+	flex-wrap: wrap;
+	margin-top: 25px;
+	margin-bottom: 55px;
+}
+.contentTitle {
+	width: 98%;
+	height: 45px;
+	line-height: 50px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #e2dcdc;
+}
+.contentTitle h2 {
+	margin: 0 10px;
+	height: 45px;
+	font-weight: bold;
+}

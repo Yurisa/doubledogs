@@ -1,0 +1,19 @@
+.uploadarea{
+    margin: 0 auto;
+    width: 40%;
+    /*height: 25px;*/
+}
+.imglist{
+    width: 10%;
+    float: left;
+    margin: 20px;
+}
+.imagename{
+    margin-bottom: 10px;
+}
+.preimage{
+    height: 250px;
+}
+.footer{
+    margin-bottom: 0;
+}

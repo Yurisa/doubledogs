@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width = device-width,initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DoubleDogs-my wish list</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/product-detail.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<nav class="box navbar">
+				<div class="box theWishListArea">
+					<a href="mywishlist.html">
+						<div class="wishListNum_div">0</div>
+					</a>
+					
+					<div class="wishList_div">
+						MY WISH LIST/<a class="login" href="#">&nbsp;sign in</a>
+					</div>
+				</div>
+				<div class="box menu-wrap">
+					<ul class="main-menu">
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="lookbook.html">LOOKBOOK</a></li>
+						<li>
+							<a id="products" href="products.html">PRODUCTS</a>
+						</li>
+						<li><a href="aboutus.html">ABOUT US</a></li>
+
+						<li><a id="search" href="#">SEARCH</a></li>
+					</ul>
+
+					<div class="box searchArea">
+						<input type="text" name="search">
+						<input type="button" name="search-btn" value="search">
+					</div>
+				</div>
+				<div class="header-logo">
+					<img src="images/logo.png">
+				</div>
+			</nav>
+		</div>
+		<div class="box center">
+			<div class="contentTitle">
+				<h2>SOFAS</h2>
+			</div>
+			<div class="box product-detail">
+				<div class="box left">
+					 <div class="box detailImg"><!--放大图，默认为product，表furniture中url-->
+					 	<img src="images/Sofas/ALBA-armchair.jpg">
+					 </div>
+					<div class="smallImg"><!--第一个li放的是表furniture中url,第二三个放表image中1/2图,点击该图可显示到detailImg中-->
+						<ul>
+							<li class="img1 box">
+								<img src="images/Sofas/ALBA-armchair.jpg">
+							</li>
+							<li class="img2 box">
+								<img src="images/Sofas/ALBA-armchair1.jpg">
+							</li>
+							<li class="img3 box">
+								<img src="images/Sofas/ALBA-armchair2.jpg">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box right">
+					<div class="right-row"><h2 id="name">ALBA-armchair</h2></div><!--放product name-->
+					<div class="right-row">Designer:<span id="designer">T.Colzani</span></div><!--放product designer-->
+					<div class="right-row">Marterial:<span id="marterial">oak</span></div><!--放product marterial-->
+					<div class="box color right-row">Color:
+						<div class="color-div blue"></div>
+						<div class="color-div red"></div>
+						<div class="color-div grey"></div>
+						<div class="color-div green"></div>
+					</div>
+					<div class="right-row">Price:<span id="price">2000</span></div><!--放product marterial-->
+					<div class="right-row">Download:<a href="#">xx.pdf</a></div>
+					<div class="box right-row wishArea">
+						<div class="wishBtn"></div>
+						<span>Add To My Wish List</span>
+					</div>	
+				</div>
+			</div>
+			<div class="box rangeArea">
+				<div class="rangeTitle"><h2>MORE PRODUCTS IN THIS RANGE</h2></div>
+				<div class="range">
+					<ul>
+						<li class="box">
+							<img src="images/Sofas/ALBA-armchair.jpg">
+						</li>
+						<li class="box">
+							<img src="images/Sofas/ALBA-armchair.jpg">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="box footer">
+			<nav>
+				<div class="footer-txt footer-title">CONTACT WITH US</div>
+				<div class="box footer-icon">
+					<a href="www.weibo.com">
+						<div class="icon box icon-weibo">
+							<img src="images/weibo.png">
+						</div>
+					</a>	
+					<a href="#">
+						<div class="icon icon-wechat">	
+							<ul>
+								<li>
+									<img id="wechat" src="images/wechat.png">
+								</li>
+								<li>
+									<img id="wechat2" src="images/wechat2.png">
+								</li>
+							</ul>								
+						</div>
+					</a>			
+				</div>
+				<div class="footer-txt footer-service">
+					<a href="customerService.html">CUSTOMER SERVICE</a>
+				</div>
+				<div class="footer-txt footer-subscribe">
+					<a class="login" href="#">SIGN IN / JOIN</a>
+				</div>
+				<div class="footer-txt footer-msg">Copyright © 2017 Pinch Design Ltd. All rights reserved. DoubleDogs is a registered trademark.</div>
+			</nav>		
+		</div>
+		<div class="theJoinArea">
+			<h1>Create Account</h1>
+			<p>Save Your wish list items permanent and manage in any device.</p>
+			<div class="input email-input">
+				<label class="title">Email:</label>
+				<input type="text" name="" id="regemail">
+				<div id="prompt">This email has been registered</div>
+			</div>
+			<div class="input password-input">
+				<label class="title">Password:</label>
+				<input type="Password" name="" id="regpassword">
+			</div>
+			<div class="input confirm-input">
+				<label class="title">Confirm Password:</label>
+				<input type="Password" name="">
+			</div>
+			<div class="box checkbox">
+				<span>
+					<input type="checkbox" name="">I would like to receive exclusive offers and news.
+				</span>
+				<span>
+					<input type="checkbox" name=""><a href="#">Yes.I consent to the Privacy Policy</a>
+				</span>
+			</div>
+			<div class="box btnArea">
+				<input type="button" name="" value="JOIN US" id="register">
+				<input id="backToSign" type="button" name="" value="BACK TO SIGN IN">
+			</div>
+		</div>	<!-- 注册 -->
+		<div class="theSignArea">
+			<h1>SIGN IN</h1>
+			<div class="input email-input">
+				<label class="title">Email:</label>
+				<input id="useremail" type="text" name="" >
+			</div>
+			<div class="input password-input">
+				<label class="title">Password:</label>
+				<input id="userpassword" type="Password" name="">
+			</div>
+			<div class="box btnArea">
+				<input id="login" type="button" name="" value="SIGN IN">
+				<a href="#">Forgotten password?</a>
+				<div class="theSign-join-area">
+					<input id="Sign-join-btn" type="button" name="" value="JOIN US">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/detail.js"></script>
+	<script>
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                data: {
+                    "f_id":getQueryString("f_id"),
+                },
+                url: "/doubledogs/product_detail",
+                dataType: "json",
+                success: function (data) {
+                    $("#marterial").html(data.material);
+                    $("#designer").html(data.designer);
+                    $("#price").html((data.price));
+                    $("#name").html(data.name);
+
+                }
+            });
+            $.ajax({
+                type: "GET",
+                data: {
+                    "f_id":getQueryString("f_id"),
+                },
+                url: "/doubledogs/getimage",
+                dataType: "json",
+                success: function (data) {
+                    var Json1 = data.imageJsonList;
+
+					    $('.detailImg img').attr("src","images/"+Json1[0].url+".jpg");
+                        $(".img1 img").attr("src","images/"+Json1[0].url+".jpg");
+                        $(".img2 img").attr("src","images/"+Json1[1].url+".jpg");
+                        $("img3 img").attr("src","images/"+Json1[2].url+".jpg");
+
+                }
+            });
+                $.ajax({
+                    type: "GET",
+                    url: "/doubledogs/judgelogin",
+                    dataType: "json",
+                    success: function (data) {
+                        if(data.success == 1){
+                            $.ajax({
+                                type: "GET",
+                                url: "/doubledogs/gettotalcollectnum",
+                                dataType: "json",
+                                success: function (data) {
+                                    $(".wishListNum_div").html(data.collectnum);
+
+                                }
+                            });
+                        }
+
+                    }
+                });
+
+        });
+
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }
+
+        $(document).on("click", ".wishArea div", function () {
+            $(this).toggleClass('wishBtn');
+            $(this).toggleClass('wishBtn-yellow');
+            $.ajax({
+                type: "get",
+                url: "/doubledogs/collect",
+                data: {
+                    "f_id":getQueryString("f_id") ,
+                },
+                dataType: "json",
+                async: true,
+                success: function (data) {
+                    gettotalcollectnum();
+                },
+                error: function (jqXHR) {
+                    //alert("发生错误：" + jqXHR.status);
+                },
+            });
+
+        });
+
+        function gettotalcollectnum() {
+            $.ajax({
+                type: "GET",
+                url: "/doubledogs/gettotalcollectnum",
+                dataType: "json",
+                success: function (data) {
+                    $(".wishListNum_div").html(data.collectnum);
+
+                }
+            });
+        }
+	</script>
+</body> 
+</html>

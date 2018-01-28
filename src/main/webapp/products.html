@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width = device-width,initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DoubleDogs-my wish list</title>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="js/laypage/laypage.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/products.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/upload.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="uikit/js/uikit.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<nav class="box navbar">
+				<div class="box theWishListArea">
+					<a href="mywishlist.html">
+						<div class="wishListNum_div">0</div>
+					</a>
+					
+					<div class="wishList_div">
+						MY WISH LIST/<a href="#">&nbsp;sign in</a>
+					</div>
+				</div>
+				<div class="box menu-wrap">
+					<ul class="main-menu">
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="lookbook.html">LOOKBOOK</a></li>
+						<li>
+							<a id="products" href="products.html">PRODUCTS</a>
+							
+						</li>
+
+						<li><a href="aboutus.html">ABOUT US</a></li>
+
+						<li><a id="search" href="#">SEARCH</a></li>
+					</ul>
+					<div class="products-content">
+						<ul>
+							<li type="sofa"  class="type1" key1="sofas" key2="armchairs"><a href="#">Sofas</a></li>
+							<li type="chair"  class="type1" key1="stools" key2="chairs"><a href="#">Chairs</a></li>
+							<li type="table"  class="type1" key1="round table" key2="square table"><a href="#">Tables</a></li>
+							<li type="storage" class="type1" key1="bookshelves" key2="sideboarders"><a href="#">Storage</a></li>
+							<li type="bed"  class="type1" key1="single bed" key2="double bed"><a href="#">Beds</a></li>
+						</ul>
+					</div>
+					<div class="box searchArea">
+						<input type="text" name="search" id="SearchValue">
+						<input type="button" name="search-btn" value="search">
+					</div>
+				</div>
+				<div class="header-logo">
+					<img src="images/logo.png">
+				</div>
+			</nav>
+		</div>
+		<div class="box center">
+			<div class="contentTitle">
+				<h2>SOFAS</h2>
+			</div>
+			<div class="box chanceBar">
+				<div class="space"></div>
+				<div class="gategoryArea">
+					<div class="chance gategoryOption">
+						<div class="box chance-title">
+							<div>GATEGORY&nbsp;</div>
+							<div class="arrow"></div>
+						</div> 
+						<div class="option">
+							<ul>
+								<li>
+									<span class="type1" id="all">All</span>
+								</li>
+								<li>
+									<span class="type2">Armchairs</span>
+								</li>
+								<li>
+									<span class="type2">Sofas</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sortbyArea">
+					<div class="chance sortbyOption">
+						<div class="box chance-title">
+							<div>SORT BY&nbsp;</div>
+							<div class="arrow"></div>
+						</div> 
+						<div class="option">
+							<ul>
+								<li>
+									<span id="sortbytime">Newest</span>
+								</li>
+								<li>
+									<span id="sortbypricelow">Lowest Price</span>
+								</li>
+								<li>
+									<span id="sortbypricehigh">Highest Price</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="theProductsArea" id="theProductsArea">
+				<div class="box products-single animated fadeIn">
+				<!-- 一条 -->
+
+				</div>
+			</div>
+		</div>
+		<div id="page1" class="page1"></div>
+		<div class="box footer">
+			<nav>
+				<div class="footer-txt footer-title">CONTACT WITH US</div>
+				<div class="box footer-icon">
+					<a href="www.weibo.com">
+						<div class="icon box icon-weibo">
+							<img src="images/weibo.png">
+						</div>
+					</a>	
+					<a href="#">
+						<div class="icon icon-wechat">	
+							<ul>
+								<li>
+									<img id="wechat" src="images/wechat.png">
+								</li>
+								<li>
+									<img id="wechat2" src="images/wechat2.png">
+								</li>
+							</ul>								
+						</div>
+					</a>			
+				</div>
+				<div class="footer-txt footer-service">
+					<a href="customerService.html">CUSTOMER SERVICE</a>
+				</div>
+				<div class="footer-txt footer-subscribe">
+					<a class="login" href="#">SIGN IN / JOIN</a>
+				</div>
+				<div class="footer-txt footer-msg">Copyright © 2017 Pinch Design Ltd. All rights reserved. DoubleDogs is a registered trademark.</div>
+			</nav>		
+		</div>
+		<div class="theJoinArea">
+			<h1>Create Account</h1>
+			<p>Save Your wish list items permanent and manage in any device.</p>
+			<div class="input email-input">
+				<label class="title">Email:</label>
+				<input type="text" name="" id="regemail">
+				<div id="prompt">This email has been registered</div>
+			</div>
+			<div class="input password-input">
+				<label class="title">Password:</label>
+				<input type="Password" name="" id="regpassword">
+			</div>
+			<div class="input confirm-input">
+				<label class="title">Confirm Password:</label>
+				<input type="Password" name="">
+			</div>
+			<div class="box checkbox">
+				<span>
+					<input type="checkbox" name="">I would like to receive exclusive offers and news.
+				</span>
+				<span>
+					<input type="checkbox" name=""><a href="#">Yes.I consent to the Privacy Policy</a>
+				</span>
+			</div>
+			<div class="box btnArea">
+				<input type="button" name="" value="JOIN US" id="register">
+				<input id="backToSign" type="button" name="" value="BACK TO SIGN IN">
+			</div>
+		</div>	<!-- 注册 -->
+		<div class="theSignArea">
+			<h1>SIGN IN</h1>
+			<div class="input email-input">
+				<label class="title">Email:</label>
+				<input id="useremail" type="text" name="" >
+			</div>
+			<div class="input password-input">
+				<label class="title">Password:</label>
+				<input id="userpassword" type="Password" name="">
+			</div>
+			<div class="box btnArea">
+				<input id="login" type="button" name="" value="SIGN IN">
+				<a href="#">Forgotten password?</a>
+				<div class="theSign-join-area">
+					<input id="Sign-join-btn" type="button" name="" value="JOIN US">
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/products.js"></script>
+    <script>
+
+        $(".contentTitle h2").html("sofa");
+			$(".type2:eq(0)").html("sofas");
+			$(".type2:eq(0)").attr("subtype", "sofas");
+			$(".type2:eq(1)").html("armchairs");
+			$(".type2:eq(1)").attr("subtype", "armchairs");
+			$("#SearchValue").attr("type","sofa");
+			$("#sortbytime").attr("type", "sofa");
+			$("#sortbypricelow").attr("type", "sofa");
+			$("#sortbypricehigh").attr("type", "sofa");
+			$("#SearchValue").removeAttr("subtype");
+			$("#sortbytime").removeAttr("subtype");
+			$("#sortbypricelow").removeAttr("subtype");
+			$("#sortbypricehigh").removeAttr("subtype");
+			$("#all").attr("type", "sofa");
+			$("#all").attr("key1", "sofas");
+			$("#all").attr("key2", "armchairs");
+			demo2("sofa");
+
+            $(".type1").on('click', function () {
+                $(".contentTitle h2").html($(this).attr("type"));
+                $(".type2:eq(0)").html($(this).attr("key1"));
+                $(".type2:eq(0)").attr("subtype", $(this).attr("key1"));
+                $(".type2:eq(1)").html($(this).attr("key2"));
+                $(".type2:eq(1)").attr("subtype", $(this).attr("key2"));
+                $("#SearchValue").attr("type",$(this).attr("type"));
+                $("#sortbytime").attr("type", $(this).attr("type"));
+                $("#sortbypricelow").attr("type", $(this).attr("type"));
+                $("#sortbypricehigh").attr("type", $(this).attr("type"));
+                $("#SearchValue").removeAttr("subtype");
+                $("#sortbytime").removeAttr("subtype");
+                $("#sortbypricelow").removeAttr("subtype");
+                $("#sortbypricehigh").removeAttr("subtype");
+                $("#all").attr("type", $(this).attr("type"));
+                $("#all").attr("key1", $(this).attr("key1"));
+                $("#all").attr("key2", $(this).attr("key2"));
+                demo2($(this).attr("type"));
+
+            });
+            function demo2(type, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "type": type,
+                    },
+                    url: "/doubledogs/selecttype",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo2(type, obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+
+            $(".type2").on('click', function () {
+                $("#SearchValue").attr("subtype", $(this).attr("subtype"));
+                $("#sortbytime").attr("subtype", $(this).attr("subtype"));
+                $("#sortbypricelow").attr("subtype", $(this).attr("subtype"));
+                $("#sortbypricehigh").attr("subtype", $(this).attr("subtype"));
+                demo3($(this).attr("subtype"));
+                console.log($(this).attr("subtype"));
+            });
+
+            function demo3(subtype, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "subtype": subtype,
+                    },
+                    url: "/doubledogs/selectsubtype",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo3(subtype, obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+
+            $("#sortbypricelow").on("click", function () {
+                console.log($(this).attr("subtype"));
+                if (typeof($(this).attr("subtype")) == "undefined") {
+                    demo4($(this).attr("type"));
+                } else {
+                    demo7($(this).attr("subtype"));
+                }
+            });
+
+            function demo4(type, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "type": type,
+                    },
+                    url: "/doubledogs/selecttypebypricelow",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo4(type,obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            };
+
+            $("#sortbypricehigh").on("click", function () {
+                if (typeof($(this).attr("subtype")) == "undefined") {
+                    demo5($(this).attr("type"));
+                } else {
+                    demo8($(this).attr("subtype"));
+                }
+            });
+            function demo5(type, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "type": type,
+                    },
+                    url: "/doubledogs/selecttypebypricehigh",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo5(type,obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            };
+
+            $("#sortbytime").on('click', function () {
+                if (typeof($(this).attr("subtype")) == "undefined") {
+                    demo6($(this).attr("type"));
+                } else {
+                    demo9($(this).attr("subtype"));
+                }
+            })
+            function demo6(type, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "type": type,
+                    },
+                    url: "/doubledogs/selecttypebytime",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo6(type,obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            };
+
+
+            function demo7(subtype, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "subtype": subtype,
+                    },
+                    url: "/doubledogs/selectsubtypebypricelow",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo7(subtype,obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            };
+
+
+            function demo8(subtype, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "subtype": subtype,
+                    },
+                    url: "/doubledogs/selectsubtypebypricehigh",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo8(subtype,obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            };
+
+
+            function demo9(subtype, curr) {
+                $.ajax({
+                    type: "GET",
+                    data: {
+                        "page": curr || 1,
+                        "subtype": subtype,
+                    },
+                    url: "/doubledogs/selectsubtypebytime",
+                    dataType: "json",
+                    success: function (data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    demo9(subtype,obj.curr);
+                                }
+                            }
+                        });
+                    }
+                });
+            };
+			/*
+			模糊搜索
+			 */
+            $("#SearchValue").bind('input propertychange',function(){
+                if (typeof($(this).attr("subtype")) == "undefined") {
+                    SearchByType($(this).val(),$(this).attr("type"));
+                } else {
+                    SearchBySubType($(this).val(),$(this).attr("subtype"));
+                }
+
+            });
+
+            function SearchByType(searchvalue,type,curr) {
+                $.ajax({
+                    type: "GET",
+                    url: "/doubledogs/searchbytypekeyword",
+                    data:{
+                        "page": curr || 1,
+                        "keyword":searchvalue,
+						"type":type,
+
+                    },
+                    dataType: "json",
+                    success: function(data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    SearchByType(searchvalue,type,obj.curr);
+                                }
+                            }
+                        });
+                    },
+                    // error: function(jqXHR){
+                    //    alert("发生错误：" + jqXHR.status);
+                    // },
+                });
+            }
+
+            function SearchBySubType(searchvalue,subtype,curr) {
+                $.ajax({
+                    type: "GET",
+                    url: "/doubledogs/searchbysubtypekeyword",
+                    data:{
+                        "page": curr || 1,
+                        "keyword":searchvalue,
+                        "subtype":subtype,
+
+                    },
+                    dataType: "json",
+                    success: function(data) {
+                        var Json1 = data.productJsonList;
+                        $(".products-single").html("");
+                        for (var i = 0; i < Json1.length; i++) {
+                            var obj = Json1[i];
+                            createImage(obj.name, obj.url, obj.f_id, obj.price);
+                        }
+                        laypage({
+                            cont: 'page1', //容器。值支持id名、原生dom对象，jquery对象。【如该容器为】：<div id="page1"></div>
+                            pages: data.totalnum, //通过后台拿到的总页数
+                            curr: curr || 1, //当前页
+                            skin: 'yahei', //加载内置皮肤，也可以直接赋值16进制颜色值，如:#c00
+                            jump: function (obj, first) { //触发分页后的回调
+                                if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                                    SearchBySubType(searchvalue,subtype,obj.curr);
+                                }
+                            }
+                        });
+                    },
+                    // error: function(jqXHR){
+                    //    alert("发生错误：" + jqXHR.status);
+                    // },
+                });
+            }
+
+            var createImage = function (myName, url, f_id, price) {
+                var formattedProductArea = document.createElement('div');
+                var formattedProductImg = document.createElement('div');
+                formattedProductImg.className = 'ProductImg';
+                var formattedProductimg = document.createElement('img');
+                formattedProductimg.setAttribute("class", "imghref");
+                formattedProductimg.setAttribute("f_id", f_id);
+                formattedProductimg.src = "images/" + url + ".jpg";
+                formattedProductImg.appendChild(formattedProductimg);
+                var formattedProductMsg = document.createElement('div');
+                formattedProductMsg.className = 'productMsg';
+                var formattedProductName = document.createElement('h2');
+                formattedProductName.innerHTML = myName;
+                var formattedProductPrice = document.createElement('span');
+                formattedProductPrice.className = 'productPrice';
+                formattedProductPrice.innerHTML = price;
+                var formattedHeart = document.createElement('div');
+                formattedHeart.className = 'wishBtn';
+                formattedHeart.setAttribute('f_id', f_id);
+                formattedProductMsg.appendChild(formattedProductName);
+                formattedProductMsg.appendChild(formattedProductPrice);
+                formattedProductMsg.appendChild(formattedHeart);
+                formattedProductArea.appendChild(formattedProductImg);
+                formattedProductArea.appendChild(formattedProductMsg);
+                formattedProductArea.setAttribute('class',"productArea animated bounceInLeft");
+                document.getElementsByClassName('products-single')[0].appendChild(formattedProductArea);
+            }
+
+            $(document).on("click", ".productMsg div", function () {
+                $(this).toggleClass('wishBtn');
+                $(this).toggleClass('wishBtn-yellow');
+                $.ajax({
+                    type: "get",
+                    url: "/doubledogs/collect",
+                    data: {
+                        "f_id": $(this).attr("f_id"),
+                    },
+                    dataType: "json",
+                    async: true,
+                    success: function (data) {
+					  gettotalcollectnum();
+                    },
+                    error: function (jqXHR) {
+                        //alert("发生错误：" + jqXHR.status);
+                    },
+                });
+
+
+            });
+            $(document).on("click", ".imghref", function () {
+                console.log(1);
+                window.location.href = "product-detail.html?f_id=" + $(this).attr("f_id");
+            });
+         function gettotalcollectnum() {
+            $.ajax({
+                type: "GET",
+                url: "/doubledogs/gettotalcollectnum",
+                dataType: "json",
+                success: function (data) {
+                    $(".wishListNum_div").html(data.collectnum);
+
+                }
+            });
+        }
+
+	</script>
+</body> 
+</html>
